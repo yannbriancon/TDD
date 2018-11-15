@@ -83,7 +83,7 @@ class TestMethods(unittest.TestCase):
         self.assertEqual(add("//[***]\n1***2***3"), 6)
         
     def test_add_numbers_several_delimiters(self):
-        self.assertEqual(add("//[*][%]\n1*2%3"), 6)
+        self.assertEqual(add("//[*][%]\n1*2%3"), 4)
         
     def test_add_numbers_several_long_delimiters(self):
         self.assertEqual(add("//[*er][%*]]\n1*er2%*]3"), 6)
